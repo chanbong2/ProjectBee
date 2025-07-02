@@ -37,12 +37,12 @@ void loop(void)
   bno.getEvent(&orientationData, Adafruit_BNO055::VECTOR_EULER);
   bno.getEvent(&linearAccelData, Adafruit_BNO055::VECTOR_LINEARACCEL);
 
-
+  // 시리얼 모니터에 값 출력
   printEvent(&orientationData);
   printEvent(&linearAccelData);
 
+  // 시리얼 플로터에 그래프 출력
   printEventForPlot(&orientationData, &linearAccelData);
-
 
   Serial.println("--");
   delay(BNO055_SAMPLERATE_DELAY_MS);
