@@ -1,7 +1,7 @@
 #include <Wire.h>
 
 void setup() {
-  Wire.begin(5, 6); // 기본: GPIO 21(SDA), GPIO 22(SCL) 사용
+  Wire.begin(5, 6); // ESP32 : GPIO 5(SDA), GPIO 6(SCL) 사용
   Serial.begin(115200);
   while (!Serial); // 시리얼 연결 대기 (ESP32에서는 없어도 됨)
   Serial.println("\nI2C Scanner");
