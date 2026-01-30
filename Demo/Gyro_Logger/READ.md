@@ -1,11 +1,11 @@
-# 📊 BNO055 자이로센서 데이터 로거 (CSV 저장)
+# BNO055 자이로센서 데이터 로거 (CSV 저장)
 
 **BNO055 자이로센서**를 이용해 측정된 값을 실시간으로 확인하고, Python 스크립트를 통해 `.csv` 파일로 저장하는 코드입니다.
 수집된 데이터는 **Edge Impulse**와 같은 머신러닝 플랫폼에서 학습 데이터로 바로 활용할 수 있으니 참고 바랍니다.
 
 ---
 
-## 🛠️ 준비물 (Requirements)
+## 준비물 (Requirements)
 
 * **Anaconda**: 가상환경을 구축하여 PC 내 타 라이브러리와의 충돌을 예방합니다. (상관없으면 생략 가능)
 * **Visual Studio Code**: 파이썬 코드 실행 편의성을 위해 사용합니다.
@@ -15,7 +15,7 @@
 
 ---
 
-## 🚀 사용 방법 (Step-by-Step)
+## 사용 방법 (Step-by-Step)
 
 ### 1. 보드 펌웨어 업로드
 1. Arduino IDE에서 `Gyro_Logger.ino` 코드를 엽니다.
@@ -45,10 +45,10 @@
 
 ---
 
-## 🤖 데이터 학습 (Edge Impulse)
+## 데이터 학습 (Edge Impulse)
 수집된 `csv` 데이터를 바탕으로 **Edge Impulse** 사이트에서 동작 인식 모델 등 다양한 AI 학습을 수행할 수 있습니다.
 
 ---
 
-## 🔗 관련 링크
+## 관련 링크
 * **Sensor Library**: [ProjectBee Repository](https://github.com/chanbong2/ProjectBee)
